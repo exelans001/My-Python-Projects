@@ -1,9 +1,36 @@
-# My-Python-Projects
-My All Python Projects
-From basics to my Professional process about my Python learns.
-AI support was used when necessary.
-Especially in the Tkinter section.
-In addition, a trial and error learning technique was used completely from 1 example without watching any videos.
-In addition, we had a game project that we once did on Roblox.
-We abandoned it after a 2-year process and as a result, I focused on Python training and learned all of these thanks to the 1-month process and Roblox Lua.
-Note:I'm continue to learn Python.
+<h1 align="center">Hi, I'm Exelans (Alper A.) 👋</h1>
+
+<p align="center">
+  <strong>Python Scripter · Game Designer · Amateur Phonk Producer</strong>  
+</p>
+
+---
+
+### 🧠 About Me
+
+- 🧑‍💻 Former Roblox Lua Developer  
+- 🐍 Currently focused on Python scripting  
+- 🎮 Interested in game systems and UI layout design  
+- 🎵 Occasionally creating phonk beats using FL Studio  
+
+---
+
+### 🛠️ Languages & Tools
+
+- **Languages:** Python (Basic), Roblox Lua (Mid)
+- **Tools:** Git, VS Code, FL Studio, Trello, Notion  
+- **Platforms:** Roblox Studio, PyInstaller, Tkinter  
+
+---
+
+### 🚀 Current Projects
+
+- 🔧 Working on scripting tools and mini apps in Python  
+- 🎮 Past public projects on Roblox [here](https://www.roblox.com/groups/33964580/Kyuwar-Games#!/about)
+
+---
+
+### 🌐 Contact
+
+- 💬 Discord: `@exelans_`  
+- 📂 Roblox Group: [Kyuwar Games](https://www.roblox.com/groups/33964580/Kyuwar-Games#!/about)  
