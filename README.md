@@ -1,37 +1,31 @@
-<h1 align="center">Hi, I'm Exelans (Alper A.) 👋</h1>
+# 🐍 My Python Projects
 
-<p align="center">
-  <strong>Python Scripter · Game Designer</strong>
-</p>
+This repository contains a collection of small Python tools and desktop apps I developed while learning and practicing Python.
 
 ---
 
-### 🧠 About Me
+## 📌 Technologies Used
 
-- 🧑‍💻 Former Roblox Lua Developer  
-- 🐍 Currently focused on Python scripting  
-- 🎮 Interested in game systems and UI layout design  
-
----
-
-### 🛠️ Languages & Tools
-
-- **Languages:** Python (Basic), Roblox Lua (Mid)  
-- **Tools:** Git, VS Code, Spyder, Unity Hub  
-- **Platforms:** Roblox Studio, Tkinter, PyInstaller  
+- Python (3.x)
+- Tkinter (for GUI interfaces)
+- PyInstaller (to convert .py to .exe)
+- Spyder IDE
 
 ---
 
-### 🚀 Current Projects
+## ⚙️ Projects Inside
 
-- 🔧 Developing scripting tools and mini desktop apps in Python  
-- 🎮 Past public Roblox projects: [Kyuwar Games](https://www.roblox.com/groups/33964580/Kyuwar-Games#!/about)
+- **Simple Calculator** – A basic calculator built using Tkinter.  
+- **Password Generator** – Random password generator with UI.  
+- **To-Do List App** – Simple task manager with save/load functionality.  
 
 ---
 
-### 🌐 Contact & Socials
+## 🛠️ How to Run
 
-- 💬 Discord: `@exelans_`  
-- 📂 Roblox Group: [Kyuwar Games](https://www.roblox.com/groups/33964580/Kyuwar-Games#!/about)  
-- 📸 Instagram: [@exelans.001](https://www.instagram.com/exelans.001/)  
-- 📺 YouTube: [@the_exe](https://www.youtube.com/@the_exe)
+Clone the repository and run any `.py` file using Python 3.x:
+
+```bash
+git clone https://github.com/exelans/My-Python-Projects.git
+cd My-Python-Projects
+python filename.py
