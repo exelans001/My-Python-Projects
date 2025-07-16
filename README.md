@@ -26,6 +26,6 @@ This repository contains a collection of small Python tools and desktop apps I d
 Clone the repository and run any `.py` file using Python 3.x:
 
 ```bash
-git clone https://github.com/exelans/My-Python-Projects.git
+git clone https://github.com/exelans001/My-Python-Projects.git
 cd My-Python-Projects
 python filename.py
