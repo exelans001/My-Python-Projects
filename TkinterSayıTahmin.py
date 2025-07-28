@@ -1,4 +1,6 @@
 #Sayı Tahmin Uygulaması Tkinter Sürümü
+#Güncelleme tarihi: 28.07.2025
+#by exelans001
 
 import tkinter as tk
 from tkinter import messagebox
@@ -9,36 +11,6 @@ sayi = random.randint(1, 100)
 skor = 100
 tahminler = []
 
-# Tahmin kontrol fonksiyonu
-def tahmin_et():
-    global skor
-    try:
-        tahmin = int(entry.get())
-    except ValueError:
-        messagebox.showwarning("Uyarı", "Lütfen geçerli bir sayı giriniz!")
-        return
-
-    tahminler.append(tahmin)
-
-    if tahmin == sayi:
-        skor += 50
-        messagebox.showinfo("Skor", f"Tebrikler! Doğru tahmin. Skorunuz: {skor}")
-        messagebox.showinfo("Tahminler", f"Denediğiniz sayılar: {tahminler}")
-        frame.destroy()
-
-    elif tahmin < sayi:
-        skor -= 5
-        messagebox.showinfo("Durum", "Arttır!")
-    elif tahmin > sayi:
-        skor -= 5
-        messagebox.showinfo("Durum", "Azalt!")
-
-    label2.config(text=f"Skorunuz: {skor}")
-
-    if skor <= 0:
-        messagebox.showinfo("Skor", f"Skorunuz {skor} olduğu için oyun bitti. Doğru sayı {sayi} idi.")
-        messagebox.showinfo("Tahminler", f"Denediğiniz sayılar: {tahminler}")
-        frame.destroy()
 
 # Arayüz
 frame = tk.Tk()
@@ -56,6 +28,37 @@ tahmin_label.pack()
 
 entry = tk.Entry(frame)
 entry.pack(pady=5)
+
+
+# Tahmin kontrol fonksiyonu
+def tahmin_et():
+    global skor
+    try:
+        tahmin = int(entry.get())
+    except ValueError:
+        messagebox.showwarning("Uyarı", "Lütfen geçerli bir sayı giriniz!")
+        return
+
+    tahminler.append(tahmin)
+
+    if tahmin == sayi:
+        skor += 50
+        label2.configure(text=f"Skorunuz: {skor}")
+        messagebox.showinfo("Skor", f"Tebrikler! Doğru tahmin. Skorunuz: {skor}")
+        messagebox.showinfo("Tahminler", f"Denediğiniz sayılar: {tahminler}")
+        frame.destroy()
+
+    elif tahmin < sayi:
+        skor -= 5
+        messagebox.showinfo("Durum", "Arttır!")
+    elif tahmin > sayi:
+        skor -= 5
+        messagebox.showinfo("Durum", "Azalt!")
+    label2.configure(text=f"Skorunuz: {skor}")
+    if skor <= 0:
+        messagebox.showinfo("Skor", f"Skorunuz {skor} olduğu için oyun bitti. Doğru sayı {sayi} idi.")
+        messagebox.showinfo("Tahminler", f"Denediğiniz sayılar: {tahminler}")
+        frame.destroy()
 
 buton = tk.Button(frame, text="Tahmin Et", command=tahmin_et)
 buton.pack(pady=10)
