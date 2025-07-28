@@ -1,4 +1,6 @@
 #Tkinter basit hesap makinesi
+#Güncelleme tarihi: 28.07.2025
+#by exelans001
 
 import tkinter as tk
 from tkinter import messagebox
@@ -21,25 +23,32 @@ sayi2.pack()
 #Seçme butonları kısmı
 islem= tk.StringVar(value="+")
 
-tk.Radiobutton(pencere,text="+",variable=islem,value="+").pack()
-tk.Radiobutton(pencere,text="-",variable=islem,value="-").pack()
-tk.Radiobutton(pencere,text="*",variable=islem,value="*").pack()
-tk.Radiobutton(pencere,text="/",variable=islem,value="/").pack()
+#combobox
+tk.OptionMenu(pencere,islem,"+","-","*","/").pack()
+
+#sonuç labeli
+label_sonuc=tk.Label(pencere,text="Sonucu görmek için Hesapla butonuna basınız.")
+label_sonuc.pack()
 #fonksiyon
 def hesap_makinesi():
-    a=float(sayi1.get())
-    b=float(sayi2.get())
+    try:
+       a=float(sayi1.get())
+       b=float(sayi2.get())
     
-    op=islem.get()
-    if op=="+":
+       op=islem.get()
+       if op=="+":
         sonuc= a+b
-    elif op=="-":
+       elif op=="-":
         sonuc= a-b
-    elif op=="*":
+       elif op=="*":
         sonuc= a*b
-    elif op=="/":
+       elif op=="/":
         sonuc= a/b
-    messagebox.showinfo("Sonuç",f"Sonuç= {sonuc}")
+       label_sonuc.configure(text=f"Sonuç= {sonuc}")
+    except ValueError:
+        messagebox.showerror("Hata", "Lütfen her iki sayıyı da giriniz.")
+        return    
+    
 #Sonuç butonu    
 sonuc=tk.Button(pencere,text="Hesapla",command=hesap_makinesi)
 sonuc.pack()
