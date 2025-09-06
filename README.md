@@ -19,7 +19,7 @@ This repository contains a collection of small Python tools and desktop apps I d
 - **Simple Calculator** – A basic calculator built using Tkinter.  
 - **Password Generator** – Random password generator with UI.  
 - **To-Do List App** – Simple task manager with save/load functionality.  
-
+- **Basic Systems** - User input system etc.
 ---
 
 ## 🛠️ How to Run
