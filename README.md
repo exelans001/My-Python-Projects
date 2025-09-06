@@ -10,6 +10,7 @@ This repository contains a collection of small Python tools and desktop apps I d
 - Tkinter (for GUI interfaces)
 - PyInstaller (to convert .py to .exe)
 - Spyder IDE
+- Visual Studio Code
 
 ---
 
